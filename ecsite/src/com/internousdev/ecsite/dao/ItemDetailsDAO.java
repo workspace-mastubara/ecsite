@@ -30,13 +30,6 @@ public class ItemDetailsDAO {
 				dto.setItemStock(rs.getInt("item_stock"));
 				dto.setInsertDate(rs.getString("insert_date"));
 				dto.setUpdatedDate(rs.getString("updated_date"));
-
-				System.out.println(dto.getId());
-				System.out.println(dto.getItemName());
-				System.out.println(dto.getItemPrice());
-				System.out.println(dto.getItemStock());
-				System.out.println(dto.getInsertDate());
-
 			}
 		} catch(SQLException e) {
 			e.printStackTrace();

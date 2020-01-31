@@ -14,7 +14,6 @@ public class ItemListDeleteConfirmAction extends ActionSupport implements Sessio
 	public String execute(){
 
 		if(deleteFlg.equals("1")){
-			System.out.println(deleteFlg);
 			setMessage("すべての商品を削除します。よろしいですか？");
 
 			session.put("deleteFlg", deleteFlg);

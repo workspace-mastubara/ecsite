@@ -14,11 +14,8 @@ public class UserListDeleteCompleteAction extends ActionSupport implements Sessi
 
 
 	public String execute(){
-		System.out.println(deleteFlg);
 		if(deleteFlg.equals("1")){
 			dao.userListDelete();
-
-			System.out.println(session.get("deleteFlg"));
 		}
 
 		return SUCCESS;

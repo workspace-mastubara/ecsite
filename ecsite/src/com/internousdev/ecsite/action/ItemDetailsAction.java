@@ -11,8 +11,6 @@ public class ItemDetailsAction extends ActionSupport{
 	private ItemInfoDTO dto = new ItemInfoDTO();
 
 	public String execute(){
-		System.out.println(id);
-
 		dto = dao.itemDetail(id);
 
 		return SUCCESS;
